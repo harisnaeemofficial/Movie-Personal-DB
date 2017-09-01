@@ -13,13 +13,13 @@ class CreateMoviesTable extends Migration
      */
     public function up()
     {
-			Schema::create('movies', function (Blueprint $table) {
-				$table->increments('id');
-				$table->string('name');
-				$table->string('orig_name');
-				$table->smallInteger('year');
-				$table->timestamps();
-			});
+        Schema::create('movies', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
+            $table->string('orig_name');
+            $table->smallInteger('year');
+            $table->timestamps();
+        });
     }
 
     /**
