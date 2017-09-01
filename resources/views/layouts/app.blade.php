@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
@@ -63,6 +64,9 @@
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
+									<li>
+										<a href="{{ route('add_movie') }}"> Add movie </a>
+									</li>
                                 </ul>
                             </li>
                         @endguest

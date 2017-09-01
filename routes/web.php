@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/movie/add', 'MovieController@addMovie')->name('add_movie');
+Route::post('/movie/add', 'MovieController@postMovie')->name('post_movie');
